@@ -1,16 +1,14 @@
-# generative_art
+# Generative Art
 
-A new Flutter project.
+Simple Generative Art made with basic trigonometric functions.
 
-## Getting Started
+Also, later on added a REFRESH button on the appbar for changing the different colors output from the app on pressing the REFRESH button
 
-This project is a starting point for a Flutter application.
+## Screenshots
+<p float="left">
+  <img src= "screenshots/1.jpg" height="400px">
+  <img src= "screenshots/2.jpg" height="400px">
+  <img src= "screenshots/3.jpg" height="400px">
+  <img src= "screenshots/4.jpg" height="400px">
+</p>
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

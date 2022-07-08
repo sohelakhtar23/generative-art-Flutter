@@ -34,6 +34,15 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Generative Art'),
+        actions: [
+          // For changing the different colors output from the app on pressing the REFRESH button
+          IconButton(
+            icon: const Icon(Icons.refresh),
+            onPressed: () {
+              setState(() {});
+            },
+          )
+        ],
       ),
       body: CustomPaint(
         painter: DemoPainter(),
@@ -64,7 +73,7 @@ class DemoPainter extends CustomPainter {
     double distance = 0.0;
     double angle = 0.0;
 
-    double distanceDelta = 2 + (random.nextInt(100)/100);
+    double distanceDelta = 2 + (random.nextInt(100) / 100);
     double angleDelta = 0.2;
 
     int totalPoints = 300;
@@ -72,7 +81,7 @@ class DemoPainter extends CustomPainter {
 
     while (curr < totalPoints) {
       // <-- make changes in trignometric functions to have different outputs
-      var xVal = center.width + (distance * cos(angle) * sin(angle)); 
+      var xVal = center.width + (distance * cos(angle) * sin(angle));
       var yVal = center.height + (distance * cos(angle));
 
       canvas.drawCircle(
